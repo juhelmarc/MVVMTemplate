@@ -1,8 +1,6 @@
-package com.example.mvvmkotlintemplate.data.service
+package com.example.mvvmkotlintemplate.data.dataService
 
 import com.example.mvvmkotlintemplate.data.models.Product
-import okhttp3.Call
-import okhttp3.Response
 import retrofit2.http.GET
 
 interface RetrofitService {

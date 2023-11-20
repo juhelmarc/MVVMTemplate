@@ -1,6 +1,6 @@
 package com.example.mvvmkotlintemplate.data.retrofit
 
-import com.example.mvvmkotlintemplate.data.service.RetrofitService
+import com.example.mvvmkotlintemplate.data.dataService.RetrofitService
 import retrofit2.Retrofit
 
 class RetrofitClient {
