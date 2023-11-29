@@ -1,4 +1,4 @@
-package com.example.mvvmkotlintemplate.ui.main
+package com.example.mvvmkotlintemplate.ui.mainActivity.alphaActivity
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel

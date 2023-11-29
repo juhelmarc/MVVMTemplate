@@ -1,4 +1,4 @@
-package com.example.mvvmkotlintemplate.ui.main
+package com.example.mvvmkotlintemplate.ui.mainActivity.alphaActivity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
