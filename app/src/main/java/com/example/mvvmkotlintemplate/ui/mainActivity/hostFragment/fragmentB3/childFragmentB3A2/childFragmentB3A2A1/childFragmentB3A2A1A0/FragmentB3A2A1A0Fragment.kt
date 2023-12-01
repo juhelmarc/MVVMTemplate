@@ -27,6 +27,7 @@ class FragmentB3A2A1A0Fragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.parentFragment.text = "HF -> FragB3 -> Frag B3A2 -> FragB3A2A1"
         binding.actualFragment.text = "FragmentB3A2A1A0"
+        binding.nextButton.text = "Back"
         binding.nextButton.setOnClickListener {
             parentFragmentManager.popBackStack()
         }
