@@ -36,7 +36,7 @@ class FragmentB3Fragment : Fragment() {
     }
 
     private fun runFragmentB3A2() {
-        childFragmentManager.commit {
+        parentFragmentManager.commit {
             replace(R.id.main_container, FragmentB3A2Fragment())
             addToBackStack("BackToFragmentB3")
             setReorderingAllowed(true)
