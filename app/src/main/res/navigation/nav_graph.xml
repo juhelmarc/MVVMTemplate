@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.mvvmkotlintemplate.ui.mainFragment.splashFragment.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.mvvmkotlintemplate.ui.mainFragment.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_splashFragment"
+            app:destination="@id/splashFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentB3Fragment"
+            app:destination="@id/fragmentB3Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentA0Fragment"
+            app:destination="@id/fragmentA0Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentB3Fragment"
+        android:name="com.example.mvvmkotlintemplate.ui.mainFragment.fragmentB3.FragmentB3Fragment"
+        android:label="FragmentB3Fragment" >
+        <action
+            android:id="@+id/action_fragmentB3Fragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_fragmentB3Fragment_to_fragmentB3A2Fragment"
+            app:destination="@id/fragmentB3A2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentB3A2Fragment"
+        android:name="com.example.mvvmkotlintemplate.ui.mainFragment.fragmentB3.childFragmentB3A2.FragmentB3A2Fragment"
+        android:label="FragmentB3A2Fragment" >
+        <action
+            android:id="@+id/action_fragmentB3A2Fragment_to_fragmentB3Fragment"
+            app:destination="@id/fragmentB3Fragment" />
+        <action
+            android:id="@+id/action_fragmentB3A2Fragment_to_fragmentB3A2A1Fragment"
+            app:destination="@id/fragmentB3A2A1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentB3A2A1Fragment"
+        android:name="com.example.mvvmkotlintemplate.ui.mainFragment.fragmentB3.childFragmentB3A2.childFragmentB3A2A1.FragmentB3A2A1Fragment"
+        android:label="FragmentB3A2A1Fragment" >
+        <action
+            android:id="@+id/action_fragmentB3A2A1Fragment_to_fragmentB3A2Fragment"
+            app:destination="@id/fragmentB3A2Fragment" />
+        <action
+            android:id="@+id/action_fragmentB3A2A1Fragment_to_fragmentB3A2A1A0Fragment"
+            app:destination="@id/fragmentB3A2A1A0Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentB3A2A1A0Fragment"
+        android:name="com.example.mvvmkotlintemplate.ui.mainFragment.fragmentB3.childFragmentB3A2.childFragmentB3A2A1.childFragmentB3A2A1A0.FragmentB3A2A1A0Fragment"
+        android:label="FragmentB3A2A1A0Fragment" >
+        <action
+            android:id="@+id/action_fragmentB3A2A1A0Fragment_to_fragmentB3A2A1Fragment"
+            app:destination="@id/fragmentB3A2A1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentA0Fragment"
+        android:name="com.example.mvvmkotlintemplate.ui.mainFragment.fragmentA0.FragmentA0Fragment"
+        android:label="FragmentA0Fragment" >
+        <action
+            android:id="@+id/action_fragmentA0Fragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

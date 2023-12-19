@@ -1,4 +1,4 @@
-package com.example.mvvmkotlintemplate
+package com.example.mvvmkotlintemplate.ui
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
